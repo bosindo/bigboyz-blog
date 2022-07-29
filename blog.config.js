@@ -3,7 +3,7 @@ const BLOG = {
   author: 'Faizal',
   email: 'faizal.fazri@raharja.info',
   link: '',
-  description: 'BigBoyz Blog',
+  description: '',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
