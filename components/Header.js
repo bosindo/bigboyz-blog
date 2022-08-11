@@ -3,8 +3,6 @@ import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useLocale } from '@/lib/locale'
 
-import logo from '../logo-bigboyz.png'
-
 const NavBar = () => {
   const locale = useLocale()
   const links = [
