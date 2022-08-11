@@ -3,6 +3,8 @@ import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useLocale } from '@/lib/locale'
 
+import logo from '../logo-bigboyz.png'
+
 const NavBar = () => {
   const locale = useLocale()
   const links = [
@@ -70,7 +72,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link href="/">
             <a aria-label={BLOG.title}>
               <div className="h-6">
-                <svg
+                {/* <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -96,7 +98,9 @@ const Header = ({ navBarTitle, fullWidth }) => {
                       <stop offset="1" stopColor="#E9E9E9" stopOpacity="0" />
                     </radialGradient>
                   </defs>
-                </svg>
+                </svg> */}
+
+                <img height={24} width={24} src={logo} />
               </div>
             </a>
           </Link>
