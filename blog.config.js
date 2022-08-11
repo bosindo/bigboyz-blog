@@ -1,7 +1,7 @@
 const BLOG = {
   title: 'BigBoyz Blog',
-  author: 'Faizal',
-  email: 'faizal.fazri@raharja.info',
+  author: 'BigBoyz',
+  email: '',
   link: '',
   description: '',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
