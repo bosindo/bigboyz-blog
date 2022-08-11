@@ -19,6 +19,8 @@ const Layout = ({
   emailHash,
   fullWidth = false
 }) => {
+  console.log(frontMatter)
+
   const locale = useLocale()
   const router = useRouter()
   return (
@@ -42,19 +44,19 @@ const Layout = ({
             <div className="flex mb-4">
               <span className="flex">
                 <Image
-                  alt={BLOG.author}
+                  alt={frontMatter.lastEditedBy.name}
                   width={24}
                   height={24}
                   src={`https://gravatar.com/avatar/${emailHash}`}
                   className="rounded-full"
                 />
-                <p className="ml-2 md:block">{BLOG.author}</p>
+                <p className="ml-2 md:block">{frontMatter.lastEditedBy.name}</p>
               </span>
               <span className="block">&nbsp;/&nbsp;</span>
             </div>
             <div className="mr-2 mb-4 md:ml-0">
               {formatDate(
-                frontMatter?.date?.start_date || frontMatter.createdTime,
+                frontMatter.lastEditedTime || frontMatter.createdTime,
                 BLOG.lang
               )}
             </div>

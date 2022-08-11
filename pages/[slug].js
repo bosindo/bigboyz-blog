@@ -28,7 +28,7 @@ export async function getStaticProps ({ params: { slug } }) {
   const post = posts.find(t => t.slug === slug)
   const blockMap = await getPostBlocks(post.id)
   const emailHash = createHash('md5')
-    .update(BLOG.email)
+    .update(post.lastEditedBy.email)
     .digest('hex')
     .trim()
     .toLowerCase()
